@@ -1,0 +1,21 @@
+.site-nav-main {
+    width: 100%;
+
+    .main-nav-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 21px 42px;
+        text-transform: uppercase;
+
+        .main-nav-link {
+            display: inline-block;
+
+            a {
+                &:hover {
+                    border-bottom: 1px solid;
+                }
+            }
+        }
+    }
+}

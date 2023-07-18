@@ -19,10 +19,10 @@ export default function Navigation () {
     return (
         <nav className="site-nav-main" aria-labelledby="mainmenu">
             <h2 id="mainmenulabel" className="visuallyhidden">Main Menu</h2>
-            <ul>
+            <ul className="main-nav-links">
                 { navLinks.map((link, index) => (
-                    <li key={index}>
-                        <a href="{link.path}">{link.title}</a>
+                    <li className="main-nav-link" key={index}>
+                        <a href={link.path}>{link.title}</a>
                     </li>
                 ))}
             </ul>
