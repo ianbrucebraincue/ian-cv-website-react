@@ -1,5 +1,11 @@
 .site-nav-main {
     width: 100%;
+    max-width: 100%;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
 
     .main-nav-links {
         display: flex;
@@ -7,9 +13,14 @@
         justify-content: space-between;
         padding: 21px 42px;
         text-transform: uppercase;
+        position: relative;
 
         .main-nav-link {
             display: inline-block;
+
+            &:nth-child(2) {
+                margin-left: 48px;
+            }
 
             a {
                 &:hover {

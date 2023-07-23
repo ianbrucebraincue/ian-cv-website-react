@@ -1,8 +1,21 @@
 @import './_variables';
 @import './_navigation';
 
-.App {
+#root {
     min-height: 100vh;
+    position: relative;
+}
+
+.main {
+    min-height: calc(100vh - 62px);
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: calc(100% - 62px);
+    max-width: 100%;
+
+    transition: .35s ease transform;
+    padding-top: 62px;
 }
 
 ul {
