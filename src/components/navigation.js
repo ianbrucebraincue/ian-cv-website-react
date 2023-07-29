@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const navLinks = [
     {
@@ -23,8 +23,7 @@ export default function Navigation () {
             <ul className="main-nav-links">
                 { navLinks.map((link, index) => (
                     <li className="main-nav-link" key={index}>
-                        <Link to={link.path}>{link.title}</Link>
-                        {/* <a href={link.path}>{link.title}</a> */}
+                        <NavLink to={link.path}>{link.title}</NavLink>
                     </li>
                 ))}
             </ul>

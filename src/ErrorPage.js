@@ -1,12 +1,8 @@
-import { useRouteError } from "react-router-dom";
 import Navigation from './components/navigation';
 
 import './styles/error-page.scss';
 
 export default function ErrorPage() {
-  const error = useRouteError();
-//   console.error(error);
-
   return (
     <main role="main" id="wrap" className="main"> 
         <div id="error-page">
@@ -14,10 +10,10 @@ export default function ErrorPage() {
         <div className="error-info">
             <h1>Oops!</h1>
             <p>
-                <i>{error.status}</i>
+                <i>There are worse things in life.</i>
             </p>
             <p>
-                <i>{error.statusText || error.message}</i>
+                <i>404 - Page not found.</i>
             </p>
         </div>
         </div>
