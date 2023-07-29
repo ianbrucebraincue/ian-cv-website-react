@@ -1,19 +1,36 @@
+import { useState, useEffect } from 'react';
 import Navigation from './components/navigation';
 import { Link, Outlet  } from 'react-router-dom';
 
 export default function ProjectLayout() {
+    const [projects, setProjects] = useState([]);
+
+    useEffect(() => {
+        fetch('../projects.json'
+        ,{
+            headers : { 
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+             }
+          })
+          .then(response => response.json())
+          .then(data => setProjects(data.projects));
+      }, []);
+
     return (
         <main role="main" id="wrap" className="main">  
            <Navigation />  
            <h1>Projects</h1>
            <div>
             <ul>
-                <li>
-                    <Link to="/projects/1">Project 1</Link>
-                </li>
-                <li>
-                    <Link to="/projects/2">Project 2</Link>
-                </li>
+                {projects.map(project => (
+                    <li key={project.id}>
+                       <Link to={project.path}>
+                        <h2>{project.title}</h2>
+                       </Link> 
+                    </li>
+
+                ))}
             </ul>
            </div>
            <Outlet />

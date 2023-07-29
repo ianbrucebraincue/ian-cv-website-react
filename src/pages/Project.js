@@ -1,7 +1,34 @@
-import { useOutletContext, useParams } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 
 export default function Project () {
-    const { id } = useParams()
+    const { id } = useParams();
+    const [projects, setProjects] = useState([]);
+
+    useEffect(() => {
+        fetch('../projects.json'
+        ,{
+            headers : { 
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+             }
+          })
+          .then(response => response.json())
+          .then(data => setProjects(data.projects));
+      }, []);
+
+      function checkObjectValue(projects) {
+        for (let i = 0; i < projects.length; i++) {
+          // Assuming the objects in the array have a key named 'value'
+          if (projects[i].path === id) {
+            return true;
+          }
+        }
+        return false;
+      }
+
+    console.log(checkObjectValue(projects));
+
     // const project = useOutletContext()
     // const project = {
     //     title: "Auxly Website",
@@ -24,7 +51,7 @@ export default function Project () {
 
     return (
         <div>
-            <h1>Project {id}</h1>
+            <h1>{ id }</h1>
         </div>
     )
 }
