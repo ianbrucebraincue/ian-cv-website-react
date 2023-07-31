@@ -33,7 +33,9 @@ export default function ProjectLayout() {
                 ))}
             </ul>
            </div>
-           <Outlet />
+
+           <Outlet context={ projects }/>
+           
         </main>
     )
 }
