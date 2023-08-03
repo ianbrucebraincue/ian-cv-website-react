@@ -2,9 +2,27 @@
     "projects": [
       {
         "id": 1,
-        "title": "First Blog Post",
-        "path": "first-blog-post",
-        "content": "This is the content of the first blog post."
+        "title": "Auxly Website",
+        "path": "auxly-website",
+        "description": "Auxly is a top 5 Canadian licensed producer of cannabis made up cannabis enthusiasts, entrepreneurs and researchers with a belief in quality innovation and building authentic connections with consumers. The objective of their website was to give an overview of their inhouse brands, while providing a place their investor relations team a platform to easily update the latest PR documents and accouncements for the public.",
+        "designer": {
+          "name": "Ian Rapsey",
+          "url": ""
+        },
+        "techs": [
+          "HTML/CSS/JavaScript",
+          "WordPress",
+          "PHP",
+          "AWS EC2",
+          "AWS CodeDeploy"
+        ],
+        "url": {
+          "name": "auxly.com",
+          "path": "https://auxly.com/"
+        },
+        "images": [
+
+        ]
       },
       {
         "id": 2,

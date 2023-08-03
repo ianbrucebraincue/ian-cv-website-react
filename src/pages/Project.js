@@ -1,59 +1,69 @@
+import { Link } from 'react-router-dom';
 import { useOutletContext, useParams } from 'react-router-dom';
 
 export default function Project () {
     const { id } = useParams();
     const projects = useOutletContext();
+    const project = getProjectById(id);
 
-    const pageExist = checkDoesPathExist();
-
-    function checkDoesPathExist() {
-        // if returning json of all projects successfully
-        let doesPathExist = false;
+    function getProjectById(id) {
+        let tempProject = null;
 
         for (let i = 0; i < projects.length; i++) {
             // Assuming the objects in the array have a key named 'path'
             if (projects[i].path === id) {
-
-                doesPathExist = true;
+                tempProject = projects[i];
             }
         }
-        return doesPathExist;
+        return tempProject;
     }
 
-    // const project = {
-    //     title: "Auxly Website",
-    //     description: "Auxly is a group of cannabis enthusiasts, entrepreneurs, CPG professionals, researchers and scientists with a shared belief in quality, executional excellence, continual innovation and building authentic connections with consumers. The objective was to give an overview of their inhouse brands, while providing a place their investor relations team a platform to easily update the latest PR documents and accouncements for the public.",
-    //     year: "2020",
-    //     designer: "Ian Rapsey",
-    //     techs: [
-    //         "HTML/CSS/JavaScript",
-    //         "WordPress",
-    //         "PHP",
-    //         "AWS EC2",
-    //         "AWS CodeDeploy"
-    //     ],
-    //     url: {
-    //         name: "auxly.com",
-    //         address: "https://auxly.com/"
-    //     }
-        
-    // }
-    
     if (projects.length > 0) {
         // Conditional rendering based on useOutletContext having loaded
-        if (pageExist) {
+        if (project) {
             // Render your HTML for a projects path match
             return (
-            <div>
-                <h1>{ id }</h1>
-            </div>
+                <div>
+                   <div>
+                        <h1>{ project.title }</h1>
+                    </div>
+                    <div>
+                        { project.description }
+                    </div>
+                    <div>
+                        <h4>
+                            Techs
+                        </h4>
+                        <ul>
+                        {project.techs.map((tech, index) => (
+                            <li key={ tech + index }>
+                                <p>{ tech }</p>
+                            </li>
+                        ))}
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>
+                            Designer
+                        </h4>
+                        <p>{ project.designer.name }</p>
+                    </div>
+                    <div>
+                        <h4>
+                            Link
+                        </h4>
+                        <Link to={ project.url.path }>
+                            <p>{ project.url.name }</p>
+                        </Link>
+                    </div>
+                </div>
             );
         } else {
             // Render a 404 page if there is no match to projects path
             return (
-            <div>
-                <h1>404 Page Not Found</h1>
-            </div>
+                <div>
+                    <h1>404 Page Not Found</h1>
+                </div>
             );
         }
     } else {
@@ -62,6 +72,6 @@ export default function Project () {
             <div>
                 <h1>Loading . . .</h1>
             </div>
-            );
+        );
     }
 }
