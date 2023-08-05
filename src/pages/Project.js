@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { useOutletContext, useParams } from 'react-router-dom';
 
+import '../styles/project.scss'
+
 export default function Project () {
     const { id } = useParams();
     const projects = useOutletContext();
@@ -23,9 +25,13 @@ export default function Project () {
         if (project) {
             // Render your HTML for a projects path match
             return (
-                <div>
+                <div className="project">
                    <div>
                         <h1>{ project.title }</h1>
+                        <div className="x-close">
+                            <span className="stroke"></span>
+                            <span className="stroke"></span>
+                        </div>
                     </div>
                     <div>
                         { project.description }
