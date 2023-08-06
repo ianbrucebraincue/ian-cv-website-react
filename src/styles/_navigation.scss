@@ -10,7 +10,7 @@
 
     .mobile-nav-header {
         display: none;
-        padding: 21px 31px;
+        padding: 21px 15px;
         text-transform: uppercase;
         background-color: #ffffff;
 
@@ -32,7 +32,7 @@
     .hamburger {
         border: 0;
         position: absolute;
-        right: 26px;
+        right: 14px;
         top: 15px;
 
         cursor: pointer;
@@ -55,6 +55,10 @@
         padding: 21px 31px;
         text-transform: uppercase;
         position: relative;
+
+        @media(max-width: 768px) {
+            padding: 21px 15px;
+        }
 
         .main-nav-link {
             display: inline-block;

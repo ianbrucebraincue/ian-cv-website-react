@@ -2,9 +2,9 @@
     "projects": [
       {
         "id": 1,
-        "title": "Auxly Cannabis Group",
+        "title": "Auxly",
         "path": "auxly",
-        "description": "Auxly is a top 5 Canadian licensed producer of cannabis made up cannabis enthusiasts, entrepreneurs and researchers with a belief in quality innovation and building authentic connections with consumers. The objective of their website was to give an overview of their inhouse brands, while providing their investor relations team a platform to easily update the latest PR documents and accouncements.",
+        "description": "Auxly Cannabis Group Inc. is a top 5 Canadian licensed producer of cannabis made up cannabis enthusiasts, entrepreneurs and researchers with a belief in quality innovation and building authentic connections with consumers. The objective of their website was to give an overview of their inhouse brands, while providing their investor relations team a platform to easily update the latest PR documents and accouncements.",
         "designer": {
           "name": "Ian Rapsey",
           "url": ""
@@ -60,72 +60,83 @@
         "id": 3,
         "title": "Kolab Project",
         "path": "kolab-project",
-        "description": "Auxly is a top 5 Canadian licensed producer of cannabis made up cannabis enthusiasts, entrepreneurs and researchers with a belief in quality innovation and building authentic connections with consumers. The objective of their website was to give an overview of their inhouse brands, while providing a place their investor relations team a platform to easily update the latest PR documents and accouncements for the public.",
+        "description": "Kolab Project is as much a creative studio as it is a cannabis company. Offering a refined collection of high quality cannabis products and design-focused, purposeful goods. The objective of this website was to have a hub for all of their product information, product availability across Canada, and their product narrative and art through - what they call - Diamond City.",
         "designer": {
-          "name": "Ian Rapsey",
+          "name": "Clea Forkert / Matt Boyd",
           "url": ""
         },
         "techs": [
           "HTML/CSS/JavaScript",
-          "WordPress",
-          "PHP",
-          "AWS EC2",
-          "AWS CodeDeploy"
+          "Liquid",
+          "Shopify",
+          "Three.js",
+          "Ruby",
+          "Ruby on Rails",
+          "HubSpot"
         ],
         "url": {
-          "name": "auxly.com",
-          "path": "https://auxly.com/"
+          "name": "kolabproject.com",
+          "path": "https://kolabproject.com/"
         },
         "images": [
-
+          "kolab-home.png",
+          "kolab-home-2.png",
+          "kolab-bud.png",
+          "kolab-embrace-unexpected.png",
+          "kolab-popups.png"
         ]
       },
       {
         "id": 4,
         "title": "National Sparks",
         "path": "national-sparks",
-        "description": "Auxly is a top 5 Canadian licensed producer of cannabis made up cannabis enthusiasts, entrepreneurs and researchers with a belief in quality innovation and building authentic connections with consumers. The objective of their website was to give an overview of their inhouse brands, while providing a place their investor relations team a platform to easily update the latest PR documents and accouncements for the public.",
+        "description": "The National Sparks Department is an extension of Back Forty cannabis company. The objective of this website was to provide adult users with whimsical age gated fodder including playlists, excuse generators, newsletter articles, tattoo ideas, etc. to pair with their cannabis experiences.",
         "designer": {
-          "name": "Ian Rapsey",
+          "name": "Varyer",
           "url": ""
         },
         "techs": [
           "HTML/CSS/JavaScript",
-          "WordPress",
-          "PHP",
-          "AWS EC2",
-          "AWS CodeDeploy"
+          "Vue.js",
+          "Nuxt.js",
+          "Netlify"
         ],
         "url": {
-          "name": "auxly.com",
-          "path": "https://auxly.com/"
+          "name": "nationalsparks.ca",
+          "path": "https://nationalsparks.ca"
         },
         "images": [
-
+          "national-sparks-gate-2.png",
+          "national-sparks-home-3.png",
+          "national-sparks-to-do.png",
+          "national-sparks-excuse-generator.png",
+          "national-sparks-get-a-pass.png",
+          "national-sparks-at-work-resources.png",
+          "national-sparks-find-an-activity.png"
         ]
       },
       {
         "id": 5,
-        "title": "Robinsons Cannabis",
+        "title": "Robinsons",
         "path": "robinsons",
-        "description": "Auxly is a top 5 Canadian licensed producer of cannabis made up cannabis enthusiasts, entrepreneurs and researchers with a belief in quality innovation and building authentic connections with consumers. The objective of their website was to give an overview of their inhouse brands, while providing a place their investor relations team a platform to easily update the latest PR documents and accouncements for the public.",
+        "description": "Robinsons is driven by an unwavering commitment to craftsmanship, and focus to grow the best cannabis. The objective of this website was to communicate and emulate the simple vast beauty of the Canadian east coast where Robinsons is grown, featuring large grainy film images and simple refined text layouts of product information.",
         "designer": {
-          "name": "Ian Rapsey",
+          "name": "Matt Boyd",
           "url": ""
         },
         "techs": [
           "HTML/CSS/JavaScript",
-          "WordPress",
-          "PHP",
-          "AWS EC2",
-          "AWS CodeDeploy"
+          "Liquid",
+          "Shopify"
         ],
         "url": {
-          "name": "auxly.com",
-          "path": "https://auxly.com/"
+          "name": "robinsonscannabis.com",
+          "path": "https://robinsonscannabis.com/"
         },
         "images": [
-
+          "robinsons-home.png",
+          "robinsons-newsletter.png",
+          "robinsons-product.png"
         ]
       }
     ]

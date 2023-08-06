@@ -9,15 +9,28 @@
     background-color: #ffffff;
     width: calc(100% - 62px);
     max-width: 930px;
-    padding: 15px;
-    border-radius: 2em;
+    padding: 20px;
+    border-radius: 20px;
     z-index: 1;
 
     color: #ffffff;
     background: rgb(70,70,75);
-    background: linear-gradient(65deg, rgba(70,70,75,0.9934348739495799) 0%, rgba(226,56,65,0.9290091036414566) 45%, rgba(70,70,75,1) 100%);
-    background: linear-gradient(65deg, rgba(70,70,75,0.9934348739495799) 0%, rgba(110,30,230,1) 45%, rgba(70,70,75,1) 100%);
-    
+    &.auxly {
+        background: linear-gradient(65deg, rgba(70,70,75,0.9934348739495799) 0%, rgba(226,56,65,0.9290091036414566) 45%, rgba(70,70,75,1) 100%);
+    }
+    &.dosecann {
+        background: linear-gradient(65deg, rgba(70,70,75,0.9934348739495799) 0%, rgba(110,30,230,1) 45%, rgba(70,70,75,1) 100%);
+    }
+    &.kolab-project {
+        background: linear-gradient(65deg, rgba(70,70,75,0.9934348739495799) 0%, rgba(19,18,18,1) 45%, rgba(70,70,75,1) 100%);    
+    }
+    &.national-sparks {
+        background: linear-gradient(65deg, rgba(70,70,75,0.9934348739495799) 0%, rgba(203,138,43,1) 45%, rgba(70,70,75,1) 100%);
+    }
+    &.robinsons {
+        background: linear-gradient(65deg, rgba(70,70,75,0.9934348739495799) 0%, rgba(52,159,58,1) 45%, rgba(70,70,75,1) 100%);
+    }
+
     @media(max-width: 700px) {
         width: 100%;   
     }

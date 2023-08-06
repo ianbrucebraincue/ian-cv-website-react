@@ -20,7 +20,7 @@ export default function ProjectLayout() {
     return (
         <main role="main" id="wrap" className="main">  
            <Navigation />  
-           <h1>Projects</h1>
+           <h1 className="visuallyhidden">Projects</h1>
            <div>
             <ul>
                 {projects.map(project => (

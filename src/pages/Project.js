@@ -28,7 +28,7 @@ export default function Project () {
             return (
                 <>
                 <div className="background-blur"></div>
-                <div className="project">                   
+                <div className={ project.path + " project"}>                   
                     <div className="project-title">
                         <h1>{ project.title }</h1>
                         <Link to="/projects">
