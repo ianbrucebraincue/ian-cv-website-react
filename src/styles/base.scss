@@ -1,8 +1,10 @@
 @import './_variables';
 @import './_navigation';
 
-html {
-    box-sizing: border-box;    
+html, * {
+    box-sizing: border-box;   
+    margin: 0;
+    padding: 0; 
 } 
 
 #root {
@@ -55,4 +57,27 @@ a {
     display: none;
     opacity: 0;
     height: 0;
+}
+
+.x-close {
+    cursor: pointer;
+    position: relative;
+    width: 32px;
+    height: 32px;
+
+    .stroke {
+        position: absolute;
+        content: ' ';
+        height: 33px;
+        left: 15px;
+        width: 1px;
+        background-color: #ffffff;
+
+        &:first-child {
+            transform: rotate(45deg);
+        }
+        &:last-child {
+            transform: rotate(-45deg);
+        }
+    }
 }
