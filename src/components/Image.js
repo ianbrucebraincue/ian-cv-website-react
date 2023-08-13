@@ -1,4 +1,4 @@
-const ProjectImage = ({ name }) => {
+const Image = ({ name }) => {
   try {
     // Import image on demand
     const image = require(`../assets/${name}`);
@@ -14,4 +14,4 @@ const ProjectImage = ({ name }) => {
   }
 };
 
-export default ProjectImage;
+export default Image;

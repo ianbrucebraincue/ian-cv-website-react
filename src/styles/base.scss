@@ -59,6 +59,14 @@ a {
     text-decoration: none;
 }
 
+.page-title {
+    border-bottom: 1px solid;
+    h1 {
+        text-transform: uppercase; 
+        padding-bottom: 10px;
+    }
+}
+
 .visuallyhidden {
     display: none;
     opacity: 0;

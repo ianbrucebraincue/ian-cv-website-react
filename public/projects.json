@@ -143,7 +143,7 @@
         "id": 6,
         "title": "Blue Tile Lounge",
         "path": "blue-tile-lounge",
-        "description": "The National Sparks Department is an extension of Back Forty cannabis company. The objective of this website was to provide adult users with whimsical age gated fodder including playlists, excuse generators, newsletter articles, tattoo ideas, etc. to pair with their cannabis experiences.",
+        "description": "Blue Tile Lounge Skateboard Shop is a skater owned and operated shop since the original BTL Park in 1997. The objective of this site was to create simple online store for customers to order product all across Canada, and limit the order of special products outside of Canada, while highlighting their team of riders and shop videos.",
         "designer": {
           "name": "Rob Lane",
           "url": ""
@@ -159,13 +159,12 @@
           "path": "https://bluetilelounge.ca"
         },
         "images": [
-          "national-sparks-gate-2.png",
-          "national-sparks-home-3.png",
-          "national-sparks-to-do.png",
-          "national-sparks-excuse-generator.png",
-          "national-sparks-get-a-pass.png",
-          "national-sparks-at-work-resources.png",
-          "national-sparks-find-an-activity.png"
+          "btl-home.png",
+          "btl-home-2.png",
+          "btl-popup.png",
+          "btl-products.png",
+          "btl-product.png",
+          "btl-cart.png"
         ]
       }
     ]
