@@ -5,14 +5,14 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #ffffff;
+    background-color: transparent;
     z-index: 20;
 
     .mobile-nav-header {
         display: flex;
         padding: 21px 31px;
         text-transform: uppercase;
-        background-color: #ffffff;
+        background-color: transparent;
 
         @media(max-width: 768px) {
             padding: 21px 15px;
@@ -45,7 +45,7 @@
            width: 22px;
            height: 2px;
            margin: 5px auto;
-           background-color: #000; 
+           background-color: #ffffff; 
         }
     }
 

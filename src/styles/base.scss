@@ -10,18 +10,27 @@ html, * {
 #root {
     min-height: 100vh;
     position: relative;
+    background: 
+    repeating-radial-gradient(#242526 0 0.0001%,#7e8083 0 0.0002%) 50% 0/2500px 2500px,
+    repeating-conic-gradient(#242526 0 0.0001%,#7e8083  0 0.0002%) 60% 60%/2500px 2500px;
+    background-blend-mode: difference;
+    animation: static .2s infinite alternate;
 }
 
+@keyframes static {
+    100% {background-position: 50% 0, 60% 50%}
+  }
+
 .main {
-    min-height: calc(100vh - 62px);
+    min-height: 100vh;
     position: relative;
     display: block;
     margin: 0 auto;
     width: calc(100% - 62px);
     max-width: 100%;
-
-    transition: .35s ease transform;
+    transition: .2s ease transform;
     padding-top: 62px;
+    color: #ffffff;
 }
 
 @media(max-width: 768px) {
