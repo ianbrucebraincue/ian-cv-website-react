@@ -138,6 +138,35 @@
           "robinsons-newsletter.png",
           "robinsons-product.png"
         ]
+      },
+      {
+        "id": 6,
+        "title": "Blue Tile Lounge",
+        "path": "blue-tile-lounge",
+        "description": "The National Sparks Department is an extension of Back Forty cannabis company. The objective of this website was to provide adult users with whimsical age gated fodder including playlists, excuse generators, newsletter articles, tattoo ideas, etc. to pair with their cannabis experiences.",
+        "designer": {
+          "name": "Rob Lane",
+          "url": ""
+        },
+        "techs": [
+          "HTML/CSS/JavaScript",
+          "Liquid",
+          "Shopify",
+          "RESTful API"
+        ],
+        "url": {
+          "name": "bluetilelounge.ca",
+          "path": "https://bluetilelounge.ca"
+        },
+        "images": [
+          "national-sparks-gate-2.png",
+          "national-sparks-home-3.png",
+          "national-sparks-to-do.png",
+          "national-sparks-excuse-generator.png",
+          "national-sparks-get-a-pass.png",
+          "national-sparks-at-work-resources.png",
+          "national-sparks-find-an-activity.png"
+        ]
       }
     ]
   }

@@ -1,0 +1,18 @@
+.projects-index {
+    display: flex;
+    flex-direction: row;
+
+    .project-hover-image {
+        width: 50%;
+        max-width: 100%;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .projects-list {
+        width: 50%;
+        max-width: 100%;
+    }
+}

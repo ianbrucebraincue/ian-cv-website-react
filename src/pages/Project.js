@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useOutletContext, useParams } from 'react-router-dom';
-import ProjectImage from '../components/projectImage';
+import Image from '../components/Image';
 
 import '../styles/project.scss'
 
@@ -75,7 +75,7 @@ export default function Project () {
                         <ul>
                             {project.images.map((image, index) => (
                                 <li className="project-image" key={ image + index }>
-                                    <ProjectImage name={image}/>
+                                    <Image name={image}/>
                                 </li>
                             ))}
                         </ul>
