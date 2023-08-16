@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, Outlet  } from 'react-router-dom';
-import Navigation from './components/Navigation';
+import Navigation from './components/navigation';
 import { motion, AnimatePresence } from "framer-motion";
 import { ReactComponent as ArrowRight } from './assets/icon-arrow-right.svg';
 import { ReactComponent as ChevronRight } from './assets/icon-chevron-right.svg';
