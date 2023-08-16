@@ -5,16 +5,21 @@ html, * {
     box-sizing: border-box;   
     margin: 0;
     padding: 0; 
-} 
-
-#root {
-    min-height: 100vh;
-    position: relative;
     background: 
     repeating-radial-gradient(#242526 0 0.0001%,#7e8083 0 0.0002%) 50% 0/2500px 2500px,
     repeating-conic-gradient(#242526 0 0.0001%,#7e8083  0 0.0002%) 60% 60%/2500px 2500px;
     background-blend-mode: difference;
     animation: static .2s infinite alternate;
+} 
+
+#root {
+    min-height: 100vh;
+    position: relative;
+// background:
+//     repeating-radial-gradient(#242526 0 0.0001%,#7e8083 0 0.0002%) 50% 0/2500px 2500px,
+//     repeating-conic-gradient(#242526 0 0.0001%,#7e8083  0 0.0002%) 60% 60%/2500px 2500px;
+//     background-blend-mode: difference;
+//     animation: static .2s infinite alternate;
 }
 
 @keyframes static {

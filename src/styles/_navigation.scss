@@ -45,7 +45,7 @@
            width: 22px;
            height: 2px;
            margin: 5px auto;
-           background-color: #ffffff; 
+           background: #ffffff;
         }
     }
 
@@ -72,6 +72,11 @@
         -ms-transition: all 250ms ease;
         -o-transition: all 250ms ease;
         transition: all 250ms ease;
+        background: transparent;
+
+        * {
+            background: transparent;
+        }
 
         &::after {
             content: "";
