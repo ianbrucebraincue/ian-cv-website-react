@@ -10,6 +10,10 @@ html, * {
     repeating-conic-gradient(#242526 0 0.0001%,#7e8083  0 0.0002%) 60% 60%/2500px 2500px;
     background-blend-mode: difference;
     animation: static .2s infinite alternate;
+    -webkit-animation: static .2s infinite alternate;
+    -moz-animation: static .2s infinite alternate;
+    -ms-animation: static .2s infinite alternate;
+    -o-animation: static .2s infinite alternate;
 } 
 
 #root {
