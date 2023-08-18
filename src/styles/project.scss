@@ -104,16 +104,16 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    // backdrop-filter: blur(4px);
+    backdrop-filter: blur(10px);
 
-    // &::before {
-    //     content: "";
-    //     background-color: #ffffff;
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     width: 100%;
-    //     height: 100%;
-    //     opacity: 0.7;
-    // }
+    &::before {
+        content: "";
+        background-color: #ffffff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
+    }
 }
