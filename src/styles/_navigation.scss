@@ -97,18 +97,9 @@
             transform: translateY(0%);
         }
 
-        @media(max-width: 768px) {
-            padding: 21px 15px;
-        }
-
         .main-nav-link {
             display: inline-block;
             padding-bottom: 1em;
-
-            &:nth-child(2) {
-                margin-left: 48px;
-                display: none;
-            }
 
             a {
                 &:hover,

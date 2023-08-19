@@ -1,0 +1,19 @@
+.about {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    .about-text,
+    .about-image {
+        width: 50%;
+        max-width: 100%;
+    }
+
+    .about-description {
+
+        h2 {
+            font-size: 18px;
+            padding-top: 1em;
+        }
+    }
+}

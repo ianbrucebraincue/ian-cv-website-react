@@ -4,12 +4,12 @@ import useOutsideClick from "../useOutsideClick";
 
 const navLinks = [
     {
-        title: 'CV',
-        path: '/cv'
+        title: 'Regarding',
+        path: '/about'
     },
     {
-        title: 'Ian Bruce',
-        path: '/'
+        title: 'CV',
+        path: '/cv'
     },
     {
         title: 'Projects',

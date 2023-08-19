@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Noise from './Noise';
 import Home from './pages/Home';
+import About from './pages/About';
 import CurriculumVitae from './pages/CurriculumVitae';
 import ProjectLayout from './ProjectLayout';
 import Project from './pages/Project';
@@ -12,6 +13,7 @@ function App() {
         <Noise />
         <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
             <Route path="/cv" element={<CurriculumVitae />} />
             <Route path="/projects" element={<ProjectLayout />}>
                 <Route path=":id" element={<Project />}/>
