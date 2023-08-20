@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   Text,
-  Font,
   Page,
   View,
   Document,
@@ -62,7 +61,7 @@ const Resume = props => (
     </Page>
 );
 
-export default () => (
+const Index = () => (
     <Document
       pageMode="fullScreen"
       author="Ian Bruce"
@@ -73,3 +72,5 @@ export default () => (
       <Resume size="A4"/>
     </Document>
   );
+
+  export default Index;

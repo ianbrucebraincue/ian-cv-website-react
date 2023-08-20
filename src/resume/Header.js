@@ -37,16 +37,18 @@ const styles = StyleSheet.create({
   },
 });
 
-export default () => (
+const Header = () => (
   <View style={styles.container}>
     <View style={styles.detailColumn}>
       <Text style={styles.name}>Ian Bruce</Text>
       <Text style={styles.subtitle}>Front End Developer</Text>
     </View>
     <View style={styles.linkColumn}>
-      <Link href="mailto:luke@theforce.com" style={styles.link}>
+      <Link href="mailto:brucegordonian@gmail.com" style={styles.link}>
         brucegordonian@gmail.com
       </Link>
     </View>
   </View>
 );
+
+export default Header;
