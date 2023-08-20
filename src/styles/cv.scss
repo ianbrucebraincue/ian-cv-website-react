@@ -1,0 +1,13 @@
+.pdf-resume-iframe-wrap {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    height: min-content;
+
+    iframe {
+        width: 100%;
+        max-width: 100%;
+    }
+}
