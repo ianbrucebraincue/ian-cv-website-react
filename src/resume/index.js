@@ -5,9 +5,15 @@ import {
   View,
   Document,
   StyleSheet,
+  Link
 } from '@react-pdf/renderer';
 
 import Header from './Header';
+import Details from './Details';
+import Links from './Links';
+import Skills from './Skills';
+import Experience from './Experience';
+import Education from './Education';
 
 const styles = StyleSheet.create({
     page: {
@@ -16,48 +22,51 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         flexDirection: 'row',
-        '@media max-width: 400': {
-            flexDirection: 'column',
-        },
     },
     leftColumn: {
         flexDirection: 'column',
-        width: 170,
+        width: "30%",
         paddingTop: 30,
-        paddingRight: 15,
-        '@media max-width: 400': {
-            width: '100%',
-            paddingRight: 0,
-        },
-        '@media orientation: landscape': {
-          width: 200,
-        },
+    },
+    rightColumn: {
+        flexDirection: 'column',
+        width: "70%",
     },
     footer: {
-        fontSize: 12,
+        fontSize: 10,
         textAlign: 'center',
         marginTop: 15,
         paddingTop: 5,
-        borderWidth: 3,
+        borderWidth: 2,
         borderColor: 'gray',
         borderStyle: 'dashed',
-        '@media orientation: landscape': {
-            marginTop: 10,
-        },
     },
+    link: {
+        color: 'black',
+        textDecoration: 'none',
+        alignSelf: 'flex-end',
+        justifySelf: 'flex-end',
+        fontStyle: 'italic',
+        fontSize: 10,
+    }
 });
 
 const Resume = props => (
     <Page {...props} style={styles.page}>
         <Header />
         <View style={styles.container}>
-        <View style={styles.leftColumn}>
-            {/* <Education />
-            <Skills /> */}
+            <View style={styles.leftColumn}>
+                <Details />
+                <Links />
+                <Skills />
+            </View>
+            <View style={styles.rightColumn}>
+                <Experience />
+                <Education />
+            </View>
         </View>
-        {/* <Experience /> */}
-        </View>
-        <Text style={styles.footer}>This IS the candidate you are looking for</Text>
+        <Text style={styles.footer}>This PDF is coded using <Link href="https://react-pdf.org/" style={styles.link}>react-pdf</Link>, a React renderer for creating PDF files in the browser.
+        </Text>
     </Page>
 );
 
