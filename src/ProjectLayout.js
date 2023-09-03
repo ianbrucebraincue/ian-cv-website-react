@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Link, Outlet  } from 'react-router-dom';
+import { Link, Outlet, useLocation  } from 'react-router-dom';
 import Navigation from './components/navigation';
 import { motion, AnimatePresence } from "framer-motion";
 import { ReactComponent as ArrowRight } from './assets/icon-arrow-right.svg';
@@ -8,6 +8,8 @@ import { ReactComponent as ChevronRight } from './assets/icon-chevron-right.svg'
 import './styles/projects.scss'
 
 export default function ProjectLayout() {
+    var locationTemp = useLocation();
+    const location = locationTemp.pathname.replace('/projects/', '');
     const [projects, setProjects] = useState([]);
     const [hoverProject, setHoverProject] = useState({ image: "", hover: false });
 
@@ -48,7 +50,7 @@ export default function ProjectLayout() {
       }
 
     return (
-        <main role="main" id="wrap" className="main">  
+        <main role="main" id="wrap" className={location.replace('/','') + " main"}>  
            <Navigation />  
            <div className="projects-index">
             <div className="project-hover-image">
