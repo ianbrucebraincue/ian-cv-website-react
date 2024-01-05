@@ -13,8 +13,8 @@ export default function About () {
                     </div>
                     <div className="about-description">
                         <h2>
-                        I'm a full stack web developer based in Toronto. 
-                        Specializing in front end development and UX/UI design,
+                        I'm a full stack web developer based in London. 
+                        Specializing in front end development,
                         I believe in the inherent value of all perspectives, 
                         translating them into practical solutions.
                         </h2>
