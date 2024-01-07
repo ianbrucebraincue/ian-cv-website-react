@@ -8,10 +8,6 @@ const navLinks = [
         path: '/about'
     },
     {
-        title: 'CV',
-        path: '/cv'
-    },
-    {
         title: 'Projects',
         path: '/projects'
     }
