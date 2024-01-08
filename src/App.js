@@ -1,3 +1,5 @@
+import CssBaseline from '@mui/material/CssBaseline';
+
 import { Routes, Route } from 'react-router-dom';
 import Noise from './Noise';
 import Home from './pages/Home';
@@ -7,9 +9,11 @@ import ProjectLayout from './ProjectLayout';
 import Project from './pages/Project';
 import ErrorPage from './ErrorPage';
 
+
 function App() {
     return (
         <>
+        <CssBaseline />
         <Noise />
         <Routes>
             <Route path="/" element={<Home />} />
