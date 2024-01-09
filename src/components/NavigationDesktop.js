@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from 'react-router-dom';
 
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -8,14 +9,41 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 
-const pages = ['Projects', 'About'];
-const socials = ['GitHub', 'LinkedIn']
+import TagIcon from '@mui/icons-material/Tag';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+
+const pages = [
+    {
+        id: crypto.randomUUID(),
+        title: 'Projects',
+        path: '/projects'
+    },
+    {   
+        id: crypto.randomUUID(),
+        title: 'Regarding',
+        path: '/about'
+    }
+];
+const socials = [
+    {
+        id: crypto.randomUUID(),
+        title: 'GitHub',
+        path: 'https://github.com/ianbrucebraincue',
+        icon: GitHubIcon
+    },
+    {
+        id: crypto.randomUUID(),
+        title: 'LinkedIn',  
+        path: 'https://www.linkedin.com/in/ian-bruce-306810110/',
+        icon: LinkedInIcon
+    }
+
+]
 
 export default function NavigationDesktop () {
     const [anchorElNav, setAnchorElNav] = useState(null);
@@ -37,26 +65,35 @@ export default function NavigationDesktop () {
     };
 
     return (
-        <AppBar position="static">
-        <Container maxWidth="xl">
+    <AppBar position="static"
+        sx={{ 
+          bgcolor: "transparent",
+          boxShadow: "none" 
+        }}
+    >
+        <Container maxWidth="100%"
+            sx={{
+                pr: '0 !important',
+                pl: '0 !important'
+            }}
+        >
           <Toolbar disableGutters>
-            <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
             <Typography
               variant="h6"
               noWrap
               component="a"
-              href="#app-bar-with-responsive-menu"
+              href="/"
               sx={{
                 mr: 2,
                 display: { xs: 'none', md: 'flex' },
                 fontFamily: 'monospace',
-                fontWeight: 700,
-                letterSpacing: '.3rem',
+                fontWeight: 400,
                 color: 'inherit',
                 textDecoration: 'none',
+                textTransform: 'uppercase'
               }}
             >
-              LOGO
+              Ian Bruce
             </Typography>
   
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -67,6 +104,9 @@ export default function NavigationDesktop () {
                 aria-haspopup="true"
                 onClick={handleOpenNavMenu}
                 color="inherit"
+                sx={{
+                    pl: '0 !important'
+                }}
               >
                 <MenuIcon />
               </IconButton>
@@ -89,47 +129,62 @@ export default function NavigationDesktop () {
                 }}
               >
                 {pages.map((page) => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{page}</Typography>
+                  <MenuItem 
+                  key={page.id} 
+                  onClick={handleCloseNavMenu}
+                  sx={{
+                    textTransform: 'uppercase'
+                  }}
+                  >
+                    <NavLink to={page.path}>{page.title}</NavLink>
                   </MenuItem>
                 ))}
               </Menu>
             </Box>
-            <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
             <Typography
               variant="h5"
               noWrap
               component="a"
-              href="#app-bar-with-responsive-menu"
+              href="/"
               sx={{
                 mr: 2,
                 display: { xs: 'flex', md: 'none' },
                 flexGrow: 1,
                 fontFamily: 'monospace',
-                fontWeight: 700,
-                letterSpacing: '.3rem',
+                fontWeight: 400,
                 color: 'inherit',
                 textDecoration: 'none',
+                textTransform: 'uppercase'
               }}
             >
-              LOGO
+              Ian Bruce
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               {pages.map((page) => (
                 <Button
-                  key={page}
+                  key={page.id}
                   onClick={handleCloseNavMenu}
                   sx={{ my: 2, color: 'white', display: 'block' }}
                 >
-                  {page}
+                    <NavLink 
+                        key={page}
+                        to={page.path}
+                    >
+                        {page.title}
+                    </NavLink>
                 </Button>
               ))}
             </Box>
   
             <Box sx={{ flexGrow: 0 }}>
-              <Tooltip title="Open settings">
+              <Tooltip title="View socials">
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                  <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                  {/* <Avatar alt="Ian Bruce" src={require(`../assets/socials-icon-white.png`)} 
+                  sx={{
+                    width: '1.5em',
+                    height: '1.5em'
+                  }}/> */}
+                  <TagIcon sx={{ color: '#ffffff' }} />
                 </IconButton>
               </Tooltip>
               <Menu
@@ -149,14 +204,29 @@ export default function NavigationDesktop () {
                 onClose={handleCloseUserMenu}
               >
                 {socials.map((social) => (
-                  <MenuItem key={social} onClick={handleCloseUserMenu}>
-                    <Typography textAlign="center">{social}</Typography>
+                  <MenuItem 
+                    key={social.id} 
+                    onClick={handleCloseUserMenu}
+                    sx={{
+                        textTransform: 'uppercase'
+                    }}
+                  >
+                    <NavLink 
+                        to={social.path}
+                        target="_blank"
+                        style={() => ({
+                            display: 'flex'
+                        })}
+                    >
+                        {<social.icon sx={{ mr: '0.3em' }}/>}
+                        {social.title}
+                    </NavLink>
                   </MenuItem>
                 ))}
               </Menu>
             </Box>
           </Toolbar>
         </Container>
-      </AppBar>
+    </AppBar>
     )
 }
