@@ -9,10 +9,13 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
+
+import TagIcon from '@mui/icons-material/Tag';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const pages = [
     {
@@ -30,12 +33,14 @@ const socials = [
     {
         id: crypto.randomUUID(),
         title: 'GitHub',
-        path: 'https://github.com/ianbrucebraincue'
+        path: 'https://github.com/ianbrucebraincue',
+        icon: GitHubIcon
     },
     {
         id: crypto.randomUUID(),
         title: 'LinkedIn',  
-        path: 'https://www.linkedin.com/in/ian-bruce-306810110/'
+        path: 'https://www.linkedin.com/in/ian-bruce-306810110/',
+        icon: LinkedInIcon
     }
 
 ]
@@ -66,7 +71,12 @@ export default function NavigationDesktop () {
           boxShadow: "none" 
         }}
     >
-        <Container maxWidth="100%">
+        <Container maxWidth="100%"
+            sx={{
+                pr: '0 !important',
+                pl: '0 !important'
+            }}
+        >
           <Toolbar disableGutters>
             <Typography
               variant="h6"
@@ -80,6 +90,7 @@ export default function NavigationDesktop () {
                 fontWeight: 400,
                 color: 'inherit',
                 textDecoration: 'none',
+                textTransform: 'uppercase'
               }}
             >
               Ian Bruce
@@ -93,6 +104,9 @@ export default function NavigationDesktop () {
                 aria-haspopup="true"
                 onClick={handleOpenNavMenu}
                 color="inherit"
+                sx={{
+                    pl: '0 !important'
+                }}
               >
                 <MenuIcon />
               </IconButton>
@@ -115,7 +129,13 @@ export default function NavigationDesktop () {
                 }}
               >
                 {pages.map((page) => (
-                  <MenuItem key={page.id} onClick={handleCloseNavMenu}>
+                  <MenuItem 
+                  key={page.id} 
+                  onClick={handleCloseNavMenu}
+                  sx={{
+                    textTransform: 'uppercase'
+                  }}
+                  >
                     <NavLink to={page.path}>{page.title}</NavLink>
                   </MenuItem>
                 ))}
@@ -134,6 +154,7 @@ export default function NavigationDesktop () {
                 fontWeight: 400,
                 color: 'inherit',
                 textDecoration: 'none',
+                textTransform: 'uppercase'
               }}
             >
               Ian Bruce
@@ -158,7 +179,12 @@ export default function NavigationDesktop () {
             <Box sx={{ flexGrow: 0 }}>
               <Tooltip title="View socials">
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                  <Avatar alt="Ian Bruce" src={require(`../assets/socials-icon-white.png`)} />
+                  {/* <Avatar alt="Ian Bruce" src={require(`../assets/socials-icon-white.png`)} 
+                  sx={{
+                    width: '1.5em',
+                    height: '1.5em'
+                  }}/> */}
+                  <TagIcon sx={{ color: '#ffffff' }} />
                 </IconButton>
               </Tooltip>
               <Menu
@@ -178,9 +204,21 @@ export default function NavigationDesktop () {
                 onClose={handleCloseUserMenu}
               >
                 {socials.map((social) => (
-                  <MenuItem key={social.id} onClick={handleCloseUserMenu}>
-                    <NavLink to={social.path}
-                    target="_blank">
+                  <MenuItem 
+                    key={social.id} 
+                    onClick={handleCloseUserMenu}
+                    sx={{
+                        textTransform: 'uppercase'
+                    }}
+                  >
+                    <NavLink 
+                        to={social.path}
+                        target="_blank"
+                        style={() => ({
+                            display: 'flex'
+                        })}
+                    >
+                        {<social.icon sx={{ mr: '0.5em' }}/>}
                         {social.title}
                     </NavLink>
                   </MenuItem>
