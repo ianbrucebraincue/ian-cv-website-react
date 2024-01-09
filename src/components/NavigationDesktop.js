@@ -218,7 +218,7 @@ export default function NavigationDesktop () {
                             display: 'flex'
                         })}
                     >
-                        {<social.icon sx={{ mr: '0.5em' }}/>}
+                        {<social.icon sx={{ mr: '0.3em' }}/>}
                         {social.title}
                     </NavLink>
                   </MenuItem>
