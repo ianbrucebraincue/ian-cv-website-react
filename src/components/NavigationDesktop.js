@@ -86,7 +86,6 @@ export default function NavigationDesktop () {
               sx={{
                 mr: 2,
                 display: { xs: 'none', md: 'flex' },
-                fontFamily: 'monospace',
                 fontWeight: 400,
                 color: 'inherit',
                 textDecoration: 'none',
@@ -150,7 +149,6 @@ export default function NavigationDesktop () {
                 mr: 2,
                 display: { xs: 'flex', md: 'none' },
                 flexGrow: 1,
-                fontFamily: 'monospace',
                 fontWeight: 400,
                 color: 'inherit',
                 textDecoration: 'none',
