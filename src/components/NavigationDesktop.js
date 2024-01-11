@@ -81,8 +81,6 @@ export default function NavigationDesktop () {
             <Typography
               variant="h6"
               noWrap
-              component="a"
-              href="/"
               sx={{
                 mr: 2,
                 display: { xs: 'none', md: 'flex' },
@@ -92,7 +90,7 @@ export default function NavigationDesktop () {
                 textTransform: 'uppercase'
               }}
             >
-              Ian Bruce
+              <NavLink to="/">Ian Bruce</NavLink>
             </Typography>
   
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -143,8 +141,6 @@ export default function NavigationDesktop () {
             <Typography
               variant="h5"
               noWrap
-              component="a"
-              href="/"
               sx={{
                 mr: 2,
                 display: { xs: 'flex', md: 'none' },
@@ -155,7 +151,7 @@ export default function NavigationDesktop () {
                 textTransform: 'uppercase'
               }}
             >
-              Ian Bruce
+              <NavLink to="/">Ian Bruce</NavLink>
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               {pages.map((page) => (
@@ -177,11 +173,6 @@ export default function NavigationDesktop () {
             <Box sx={{ flexGrow: 0 }}>
               <Tooltip title="View socials">
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                  {/* <Avatar alt="Ian Bruce" src={require(`../assets/socials-icon-white.png`)} 
-                  sx={{
-                    width: '1.5em',
-                    height: '1.5em'
-                  }}/> */}
                   <TagIcon sx={{ color: '#ffffff' }} />
                 </IconButton>
               </Tooltip>

@@ -1,7 +1,7 @@
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import Noise from './Noise';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -17,15 +17,30 @@ const ianBruceTheme = createTheme({
 });
 
 function App() {
+    const shouldRedirect = true;
+
     return (
         // Wrap your app with ThemeProvider and apply the custom theme
         <ThemeProvider theme={ianBruceTheme}>
             <CssBaseline />
             <Noise />
             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/projects" element={<ProjectLayout />}>
+                <Route index element={
+                    shouldRedirect ? (
+                        <Navigate replace to="/projects" />
+                    ) : (
+                        <Home />
+                    )
+                } />
+                <Route path="home" element={
+                    shouldRedirect ? (
+                        <Navigate replace to="/projects" />
+                    ) : (
+                        <Home />
+                    )
+                } />
+                <Route path="about" element={<About />} />
+                <Route path="projects" element={<ProjectLayout />}>
                     <Route path=":id" element={<Project />}/>
                 </Route>
                 <Route path="*" element={<ErrorPage />} />
