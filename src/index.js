@@ -14,7 +14,11 @@ import './index.css';
 import './styles/base.scss';
 
 import reportWebVitals from './reportWebVitals';
-// ReactGA.initialize( {GA_MEASUREMENT_ID: 'G-3TGS183756'} );
+ReactGA.initialize([
+  {
+    trackingId: 'G-3TGS183756'
+  } 
+]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
