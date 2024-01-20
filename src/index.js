@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
+import ReactGA from 'react-ga4';
 
 // import Material UI font weights
 import '@fontsource/roboto/300.css';
@@ -13,6 +14,7 @@ import './index.css';
 import './styles/base.scss';
 
 import reportWebVitals from './reportWebVitals';
+ReactGA.initialize( {GA_MEASUREMENT_ID: 'G-3TGS183756'} );
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
