@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
 import { PDFViewer } from '@react-pdf/renderer';
-import Navigation from '../components/navigation';
 import Resume from '../resume/index';
 
 import '../styles/cv.scss';

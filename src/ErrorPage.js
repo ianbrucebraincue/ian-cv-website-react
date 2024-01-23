@@ -1,4 +1,4 @@
-import Navigation from './components/navigation';
+import Navigation from './components/NavigationDesktop';
 
 import './styles/error-page.scss';
 

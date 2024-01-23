@@ -1,62 +1,6 @@
 {
     "projects": [
       {
-        "id": 1,
-        "title": "Auxly",
-        "path": "auxly",
-        "description": "Auxly Cannabis Group Inc. is a top 5 Canadian licensed producer of cannabis made up cannabis enthusiasts, entrepreneurs and researchers with a belief in quality innovation and building authentic connections with consumers. The objective of their website was to give an overview of their inhouse brands, while providing their investor relations team a platform to easily update the latest PR documents and accouncements.",
-        "designer": {
-          "name": "Ian Rapsey",
-          "url": ""
-        },
-        "techs": [
-          "HTML/CSS/JavaScript",
-          "WordPress",
-          "PHP",
-          "AWS EC2",
-          "AWS CodeDeploy"
-        ],
-        "url": {
-          "name": "auxly.com",
-          "path": "https://auxly.com/"
-        },
-        "images": [
-          "auxly-home.png",
-          "auxly-home-2.png",
-          "auxly-home-3.png",
-          "auxly-about.png"
-        ]
-      },
-      {
-        "id": 2,
-        "title": "Dosecann",
-        "path": "dosecann",
-        "description": "Dosecann Cannabis Solutions is a Canadian cannabis company that specializes in the development and manufacturing of innovative cannabis products. They offer a wide range of cannabis-infused products including oils, capsules, and sprays. Dosecann is a calm wellness focused brand - it was important the website reflect these feelings, along with providing information in French for their Quebec customers.",
-        "designer": {
-          "name": "Clea Forkert / Matt Boyd",
-          "url": ""
-        },
-        "techs": [
-          "HTML/CSS/JavaScript",
-          "Vue.js",
-          "Nuxt.js",
-          "Netlify",
-          "i18n"
-        ],
-        "url": {
-          "name": "dosecann.com",
-          "path": "https://dosecann.com/"
-        },
-        "images": [
-          "dosecann-home.png",
-          "dosecann-home-2.png",
-          "dosecann-home-2-fr.png",
-          "dosecann-products.png",
-          "dosecann-product.png",
-          "dosecann-retailers.png"
-        ]
-      },
-      {
         "id": 3,
         "title": "Kolab Project",
         "path": "kolab-project",
@@ -140,6 +84,35 @@
         ]
       },
       {
+        "id": 2,
+        "title": "Dosecann",
+        "path": "dosecann",
+        "description": "Dosecann Cannabis Solutions is a Canadian cannabis company that specializes in the development and manufacturing of innovative cannabis products. They offer a wide range of cannabis-infused products including oils, capsules, and sprays. Dosecann is a calm wellness focused brand - it was important the website reflect these feelings, along with providing information in French for their Quebec customers.",
+        "designer": {
+          "name": "Clea Forkert / Matt Boyd",
+          "url": ""
+        },
+        "techs": [
+          "HTML/CSS/JavaScript",
+          "Vue.js",
+          "Nuxt.js",
+          "Netlify",
+          "i18n"
+        ],
+        "url": {
+          "name": "dosecann.com",
+          "path": "https://dosecann.com/"
+        },
+        "images": [
+          "dosecann-home.png",
+          "dosecann-home-2.png",
+          "dosecann-home-2-fr.png",
+          "dosecann-products.png",
+          "dosecann-product.png",
+          "dosecann-retailers.png"
+        ]
+      },
+      {
         "id": 6,
         "title": "Blue Tile Lounge",
         "path": "blue-tile-lounge",
@@ -165,6 +138,33 @@
           "btl-products.png",
           "btl-product.png",
           "btl-cart.png"
+        ]
+      },
+      {
+        "id": 1,
+        "title": "Auxly",
+        "path": "auxly",
+        "description": "Auxly Cannabis Group Inc. is a top 5 Canadian licensed producer of cannabis made up cannabis enthusiasts, entrepreneurs and researchers with a belief in quality innovation and building authentic connections with consumers. The objective of their website was to give an overview of their inhouse brands, while providing their investor relations team a platform to easily update the latest PR documents and accouncements.",
+        "designer": {
+          "name": "Ian Rapsey",
+          "url": ""
+        },
+        "techs": [
+          "HTML/CSS/JavaScript",
+          "WordPress",
+          "PHP",
+          "AWS EC2",
+          "AWS CodeDeploy"
+        ],
+        "url": {
+          "name": "auxly.com",
+          "path": "https://auxly.com/"
+        },
+        "images": [
+          "auxly-home.png",
+          "auxly-home-2.png",
+          "auxly-home-3.png",
+          "auxly-about.png"
         ]
       }
     ]
