@@ -184,3 +184,8 @@ a {
         }
     }
 }
+
+.strike-through {
+  text-decoration: line-through;
+  pointer-events: none;
+}

@@ -65,7 +65,7 @@ export default function Project () {
                                 <h4>
                                     Link
                                 </h4>
-                                <Link to={ project.url.path } target="_blank" rel="noopener noreferrer">
+                                <Link to={ project.url.path } target="_blank" rel="noopener noreferrer" className={project.url.path === "" ? "strike-through" : ""}>
                                     <p>{ project.url.name }</p>
                                 </Link>
                             </div>

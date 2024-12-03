@@ -1,6 +1,59 @@
 {
     "projects": [
       {
+        "id": 8,
+        "title": "Disauthority",
+        "path": "disauthority",
+        "description": "DISAUTHORITY is a London-based production & postproduction company. The website's vibrant and dynamic color design was inspired by the client's commitment to industry-leading color accuracy and creative excellence.",
+        "designer": {
+          "name": "Kelly Bush",
+          "url": ""
+        },
+        "techs": [
+          "HTML/CSS/JavaScript",
+          "WordPress"
+        ],
+        "url": {
+          "name": "disauthority.com",
+          "path": "https://disauthority.com/"
+        },
+        "images": [
+          "disauthority-1.png",
+          "disauthority-2.png",
+          "disauthority-3.png",
+          "disauthority-4.png",
+          "disauthority-5.png",
+          "disauthority-6.png"
+        ]
+      },
+      {
+        "id": 7,
+        "title": "String Systems",
+        "path": "string-systems",
+        "description": "String Systems' team delivers cloud solutions, boosts collaboration, strengthens security, automates processes, and streamlines business performance. Also, there are a quite custom page header animations in this one (e.g. homepage & how we help).",
+        "designer": {
+          "name": "George Butcher",
+          "url": ""
+        },
+        "techs": [
+          "HTML/CSS/JavaScript",
+          "WordPress",
+          "Plesk"
+        ],
+        "url": {
+          "name": "string-systems.co.uk",
+          "path": "https://www.string-systems.co.uk/"
+        },
+        "images": [
+          "string-system-1.png",
+          "string-system-2.png",
+          "string-system-3.png",
+          "string-system-4.png",
+          "string-system-5.png",
+          "string-system-6.png"
+        ]
+      },
+      {
         "id": 3,
         "title": "Kolab Project",
         "path": "kolab-project",
@@ -20,7 +73,7 @@
         ],
         "url": {
           "name": "kolabproject.com",
-          "path": "https://kolabproject.com/"
+          "path": ""
         },
         "images": [
           "kolab-home.png",
@@ -47,7 +100,7 @@
         ],
         "url": {
           "name": "nationalsparks.ca",
-          "path": "https://nationalsparks.ca"
+          "path": ""
         },
         "images": [
           "national-sparks-gate-2.png",
@@ -75,7 +128,7 @@
         ],
         "url": {
           "name": "robinsonscannabis.com",
-          "path": "https://robinsonscannabis.com/"
+          "path": ""
         },
         "images": [
           "robinsons-home.png",
